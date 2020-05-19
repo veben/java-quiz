@@ -243,4 +243,10 @@
 	
 24. What is the purpose of a `final` class?
 	- (x) The class can't be extended
-	- ( ) All references to objects of the class would act as if they were declared as final
+	- ( ) All references to objects of the class would act as if they were declared as `final`
+	
+25. What assertions are true?
+	- [ ] A class can be `abstract` and `final`
+	- [x] `abstract` and `final` are exclusive
+	- [x] A nested interface can be private
+	- [ ] None of the above
