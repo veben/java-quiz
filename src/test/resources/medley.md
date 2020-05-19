@@ -1,4 +1,4 @@
-## Java language category
+## Medley category
 
 ---
 1. Java language is?
@@ -263,13 +263,11 @@
 	- (x) By implementing `Runnable`
 	- (x) By extending `Thread`
 
-28. What new features exists since **java 8**?
-	- [x] Lambda
-	- [x] Streams
-	- [x] Type inference
-	- [ ] Strings in Switch
-
-	> Strings in Switch feature is from java 7
+28. What operator always evaluate its operands?
+- ( ) &&
+- (x) %
+- ( ) ||
+- ( ) ?
 
 29. What do return the following function, in order?
     ```java
@@ -296,10 +294,3 @@
 	- ( ) 23 and 14 and 14
 	- (x) 23 and 14 and 18
 	- ( ) 23 and 18 and 18
-	
-30. What operator always evaluate its operands?
-- ( ) &&
-- (x) %
-- ( ) ||
-- ( ) ?
-

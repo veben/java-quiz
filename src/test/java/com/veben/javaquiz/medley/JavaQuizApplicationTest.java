@@ -1,4 +1,4 @@
-package com.veben.javaquiz;
+package com.veben.javaquiz.medley;
 
 import org.junit.jupiter.api.DisplayName;
 import org.springframework.boot.SpringApplication;
