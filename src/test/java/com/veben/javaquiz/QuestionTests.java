@@ -13,7 +13,7 @@ class QuestionTests {
     @Nested
     @DisplayName("Q4")
     class should_test_equality {
-        public int stringEquality() {
+        private int stringEquality() {
             String str1 = "foo";
             String str2 = new String("foo");
             if (str1 == str2) {
@@ -34,11 +34,11 @@ class QuestionTests {
     @Nested
     @DisplayName("Q5")
     class should_test_transformation {
-        public void transform(String str) {
+        private void transform(String str) {
             str = "foo-new";
         }
 
-        public String stringTransform() {
+        private String stringTransform() {
             String str = "foo-old";
             transform(str);
             return str.split("-")[1];
@@ -53,7 +53,7 @@ class QuestionTests {
     @Nested
     @DisplayName("Q8")
     class should_test_matching {
-        public String match() {
+        private String match() {
             String str = "123abc";
             Pattern pattern = Pattern.compile("(\\d+)(\\w+)");
             Matcher matcher = pattern.matcher(str);
@@ -63,6 +63,33 @@ class QuestionTests {
         @Test
         void should_test_match_function() {
             assertThat(match()).isEqualTo("123abc");
+        }
+    }
+
+    @Nested
+    @DisplayName("Q29")
+    class should_test_evaluation_order {
+        private int evaluate() {
+            int a = 2;
+            return ++a + ++a * ++a;
+        }
+
+        private int evaluateBis() {
+            int a = 2;
+            return a++ + a++ * a++;
+        }
+
+        private int evaluateTer() {
+            int a = 2;
+            return a++ + ++a * a++;
+        }
+
+        @Test
+        void should_test_evaluate_function() {
+
+            assertThat(evaluate()).isEqualTo(23); // 3 + 4 * 5
+            assertThat(evaluateBis()).isEqualTo(14); // 2 + 3 * 4
+            assertThat(evaluateTer()).isEqualTo(18); // 2 + 4 * 4
         }
     }
 }

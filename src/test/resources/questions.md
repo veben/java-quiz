@@ -5,20 +5,19 @@
     - ( ) compiled
     - (x) interpreted
 
-2. Which keyword allows you to access only from the class?
-	- ( ) private
-	- ( ) protected
-	- ( ) public
+2. Which protection level allows you to access only from the class?
+	- ( ) the `private` one
+	- ( ) the `protected` one
+	- ( ) the `public` one
 	- (x) the default one
 
 3. What do you need to when you overload the `equals` method of a class?
-	- (x) overload `hashCode`
+	- (x) `hashCode` overloading
 	- ( ) protected `clone`
 	- ( ) public `toString`
 
 4. What does `stringEquality` method returns?
-
-    ```
+    ```java
     @Nested
     @DisplayName("Q4")
     class should_test_equality {
@@ -40,7 +39,6 @@
         }
     }
     ```
-
 	- ( ) 1
 	- ( ) 2
 	- (x) 3
@@ -250,3 +248,58 @@
 	- [x] `abstract` and `final` are exclusive
 	- [x] A nested interface can be private
 	- [ ] None of the above
+	
+	> see: https://stackoverflow.com/questions/9618583/java-final-abstract-class
+
+26. What is **boxing**?
+	- (x) Conversion from primitive type to object
+	- ( ) Conversion from object to primitive type
+	- ( ) Adapt an interface to another one
+	- ( ) None of the above
+	
+27. How can you create a thread?
+	- ( ) By extending `Runnable`
+	- ( ) By implementing `Thread`
+	- (x) By implementing `Runnable`
+	- (x) By extending `Thread`
+
+28. What new features exists since **java 8**?
+	- [x] Lambda
+	- [x] Streams
+	- [x] Type inference
+	- [ ] Strings in Switch
+
+	> Strings in Switch feature is from java 7
+
+29. What do return the following function, in order?
+    ```java
+    @Nested
+    @DisplayName("Q29")
+    class should_test_evaluation_order {
+        private int evaluate() {
+            int a = 2;
+            return ++a + ++a * ++a;
+        }
+    
+        private int evaluateBis() {
+            int a = 2;
+            return a++ + a++ * a++;
+        }
+    
+        private int evaluateTer() {
+            int a = 2;
+            return a++ + ++a * a++;
+        }
+    }
+    ```
+	- ( ) 23 and 23 and 23
+	- ( ) 23 and 14 and 14
+	- (x) 23 and 14 and 18
+	- ( ) 23 and 18 and 18
+	
+30. What operator always evaluate its operands?
+- ( ) &&
+- (x) %
+- ( ) ||
+- ( ) ?
+
