@@ -31,3 +31,28 @@
 	- ( ) A `String`
 	- ( ) An `Object`
 	- (x) A `Function`
+	
+6. What of these Stream operations is **intermediate**?
+	- [x] `map`
+	- [x] `filter`
+	- [ ] `forEach`
+	- [ ] `collect`
+	
+	> **Intermediate** operations returns `stream` as result whereas **terminal** operation returns non-stream like collection, object or primitive
+
+7. In java 8, what is `Function`?
+	- ( ) A lambda function
+	- (x) An interface
+	- ( ) A class
+	
+8. In java 8, what is `Predicate`?
+	- ( ) A lambda function
+	- (x) An interface
+	- ( ) A class
+	
+9. What method of `Optional` class allow verifying non-nullity?
+	- ( ) `isNullable()`
+	- (x) `isPresent()`
+	- ( ) `isNotNull()`
+	- ( ) `isNotEmpty()`
+	

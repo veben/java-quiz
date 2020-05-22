@@ -228,10 +228,10 @@
 	- [x] Builder
 
 22. What allow to have a one line commentary?
-	- (x) //
-	- ( ) #
-	- ( ) /*
-	- ( ) %
+	- (x) `//`
+	- ( ) `#`
+	- ( ) `/*`
+	- ( ) `%`
 	
 23. What is the category of the Facade Design?
 	- ( ) Creational
