@@ -17,6 +17,7 @@
 ## ❓ Quiz parts
 - [ ] [Java 8](src/test/resources/java8.md)
 - [ ] [Medley](src/test/resources/medley.md)
+- [ ] [Interface](src/test/resources/interface.md)
 
 ## 🚀 Launch all tests
 
