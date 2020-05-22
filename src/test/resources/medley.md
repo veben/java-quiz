@@ -264,10 +264,10 @@
 	- (x) By extending `Thread`
 
 28. What operator always evaluate its operands?
-- ( ) &&
-- (x) %
-- ( ) ||
-- ( ) ?
+- ( ) `&&`
+- (x) `%`
+- ( ) `||`
+- ( ) `?`
 
 29. What do return the following function, in order?
     ```java
